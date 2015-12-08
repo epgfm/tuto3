@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     # Lecture du message
     msg = ""
-    with open("message.txt", "r") as f:
+    with open(enc_msg_file, "r") as f:
         msg = f.read()
 
 
