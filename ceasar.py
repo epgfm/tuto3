@@ -46,19 +46,20 @@ if __name__ == "__main__":
     # -m : spécifier le fichier texte contenant le message
     parser = argparse.ArgumentParser(description="encrypt_string code program")
     parser.add_argument("-d", type=int, help="How to shift the message", required=True)
-    parser.add_argument("-m", type=str, help="File to encode", required=True)
+    parser.add_argument("-m", type=str, help="Source File to encode", required=True)
     args = parser.parse_args()
 
 
 
     # On récupère le nom du fichier du message
     msg_file = args.m
-    # On crée un autre nom de fichier pour la version codée
+
+    # On récupère le nom du fichier pour la version codée
     enc_msg_file = "enc_" + msg_file
 
     # Lecture du message
     msg = ""
-    with open(enc_msg_file, "r") as f:
+    with open(msg_file, "r") as f:
         msg = f.read()
 
 
