@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
     # On parse les argument
     # -m pour le fichier encodé
-    parser = argparse.ArgumentParser(description="Ceasar decode program")
+    parser = argparse.ArgumentParser(description="Caesar decode program")
     parser.add_argument("-m", type=str, help="File to decode", required=True)
     args = parser.parse_args()
 
